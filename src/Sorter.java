@@ -32,7 +32,6 @@ public class Sorter {
             BufferedReader reader = new BufferedReader(new FileReader(this.inputFile));
             List<Integer> list = new ArrayList<Integer>(Collections.nCopies(100, 0));
             BufferedWriter bw = new BufferedWriter(new FileWriter(this.outputFile));
-            PrintWriter pw = new PrintWriter(bw);
 
             //read random data
             while ((line = reader.readLine()) != null) {
