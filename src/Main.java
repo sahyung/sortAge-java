@@ -1,13 +1,14 @@
 import java.io.*;
 
 public class Main {
-    public static void main(String args[]){
-        File inputFile = new File("input.txt");
-        File outputFile = new File("output.txt");
 
-        InputGenerator generator = new InputGenerator(inputFile, 1000); // generate random age
-        generator.generate();
-        Sorter sorter = new Sorter(inputFile, outputFile);
-        sorter.run();
+    public static void main(String[] args) {
+        File inputFile1 = new File("product.tsv");
+        File inputFile2 = new File("user_pref.tsv");
+        String uid = "12341";
+
+        Recomend rcm = new Recomend(inputFile1, inputFile2, uid);
+        rcm.run();
     }
+
 }
